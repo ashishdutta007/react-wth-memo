@@ -9,6 +9,7 @@ export default function App() {
       <MemoizedMovie title="Outside In" releaseDate="2020" />
       <MemoizedMovie title="Her" releaseDate="2015" />
       <MemoizedMovie title="Outside In" releaseDate="2020" />
+      <MemoizedMovie title="Her" releaseDate="2015" />
     </div>
   );
 }

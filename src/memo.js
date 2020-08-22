@@ -3,12 +3,13 @@ export function memo(func) {
   var cache = {};
   return function() {
     // console.log("inner ", arguments);
+    console.log("args ", arguments[0]);
     var key = JSON.stringify(arguments);
-    // console.log("key ", key);
     if (cache[key]) {
-      console.log("from cache ");
+      console.log("from cache");
       return cache[key];
     } else {
+      console.log("not from cache");
       const val = func.apply(null, arguments);
       cache[key] = val;
       return val;
